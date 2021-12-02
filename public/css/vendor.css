@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.pad{padding: 0px;
+    margin: 0px;
+  
+    box-sizing: border-box;
+
+}
+.im1{color: blanchedalmond;
+    background-image: url(../pics/profile.jpg);
+    background-size: cover;
+ }
+.im1:hover{
+   transform: translateX(-200px);
+   transition: ease all 2s;
+}
+
+.im2{color: blanchedalmond;
+    background-image: url(../pics/pricetags.jpg);
+    background-size: cover;
+   
+}
+.im2:hover{
+    transform: translateX(-200px);
+    transition: ease all 2s;
+   
+}
+
+.im3{
+    background-image: url(../pics/database.jpg);
+    background-size: cover;
+    
+   
+}
+.im3:hover{
+  
+    transform: translateX(-200px);
+    transition: ease all 2s;
+}
+.req :hover cont{
+
+}

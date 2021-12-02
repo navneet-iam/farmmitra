@@ -1,0 +1,58 @@
+
+html {
+    background-image: url("bg1.jpg");
+    background-size: 100%;
+  }
+  
+  .centered {
+      padding-top: 100px;
+      text-align: center;
+  }
+  
+  .secret-text {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(66, 14, 14);
+  }
+  
+  .btn{
+    margin: 22px 6px;
+    color: black;
+    background-blend-mode: normal;
+    padding: 11px 26px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn:hover{
+    background-color: rgb(56, 48, 48);
+    color: white;
+    text-decoration: none;
+  }
+  
+  .container{
+    /* border: 3px solid black; */
+    margin-left: 500px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+    border-radius: 20px;
+    font-size: larger;
+  }
+  .form-group{
+    text-align: center;
+  }
+  .form-group input{
+    text-align: center;
+    font-family: cursive;
+    margin: 3px;
+    padding: 1px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 25px;
+  }
+  

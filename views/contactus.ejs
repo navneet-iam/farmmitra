@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>
+        function showAlert() {
+            var myText = "your form is submitted!!  we will back to you soon";
+            alert(myText);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <div class="logo">
+        <img src="logopng.png" alt="">
+    </div> -->
+    <div class="contact">
+        <img src="../pics/pngwing.com.png" alt="">
+    </div>
+    <div class="container">
+        <form action="/contact-save" method="POST">
+            <h1 class="main_head">Contact Us</h1>
+            <hr>
+            <h2>contact detail</h2>
+            <p>Name: <input type="text" name="name" required placeholder="Enter Your Name"></p>
+            <fieldset style="border: 2px solid black">
+                <legend>Gender</legend>
+                <p>
+                    Male <input type="radio" name="gender" id="Male">
+                    Female <input type="radio" name="gender" id="Female" required>
+                </p>
+            </fieldset>
+            <p>
+                Mobile number: <input type="number" name="number" id="number" required
+                    placeholder="Enter Mobile number">
+            </p>
+            <p>
+                EMail: <input type="email" name="email" id="email" required placeholder="Enter Your E-mail">
+            </p>
+            <p>
+                Describe what you want to contact us for here: <textarea style="border: 2px solid black" name="Message"
+                    id="Message" rows="4" required placeholder="Your Message"></textarea>
+            </p>
+            <div>
+                <input type="reset" value="Reset now">
+            </div>
+            <input type="submit" onclick="showAlert()" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image" href="pics/logo2.png">
+    <link rel="stylesheet" href="css/page1.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <script src="javascript/jquery-1.8.2.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <style>
+        .stat::before {
+
+            content: "Vendor id";
+
+        }
+
+
+        .stat1::before {
+            content: "Verification code";
+
+
+        }
+    </style>
+
+
+</head>
+
+<body style="overflow: hidden;margin: 0px;padding: 0px; background-color:rgb(49, 10, 10);">
+    <div class="fle-col fle-row" style="width: 100%;height: 100vh;">
+        <form class="card" style="width: 18rem;" method="post" action="/vf">
+            <div class="stat mt-5 mb-3"> <input type="text" class="form-control-plaintext  " name="vid"></div>
+            <div> <input type="text" class="form-control-plaintext  " name="fid"></div>
+            <div class="stat1 mb-3 "> <input type="text" class="form-control-plaintext  " name="code"></div>
+
+            <button type="submit" class="btn btn-outline-secondary mt-5 mb-5">Verify</button>
+        </form>
+    </div>
+</body>
+
+</html>

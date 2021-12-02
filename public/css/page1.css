@@ -1,0 +1,85 @@
+.bod{
+background-image: url(../pics/sua-truong-ZtLRT4j_lOA-unsplash.jpg);
+background-size: cover;
+
+}
+.navitems{
+color: blanchedalmond;
+padding: 15px;
+
+}
+.pad {
+    padding: 7px;
+    box-sizing: border-box;
+}
+.nav-logo{
+    width: 35px;
+    height: 30px;
+    background-image: url(../pics/logo2.png);
+    background-size: cover;
+    border-radius: 15px;
+}
+.fle-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+.fle-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.btn-nav{
+    color: White;
+    width: 100%;
+    border: 1px whitesmoke solid; 
+}
+.nav2{
+    background-color: rgba(14, 110, 110,.5);
+    
+}
+.nav-link{
+    color: black;
+}
+.card-upper{
+    transform-style: preserve-3d;
+    transform: perspective(200px);
+
+}
+.btn-card{
+    color: white;
+    border: 5px white solid;
+}
+.btn-card:hover{
+    transform: scale(1.2);
+    color: greenyellow;
+    font-size: 30px;
+    border: 5px greenyellow solid;
+}
+.nospace{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+i{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.foot>h3{
+    font-size: 20px;
+}
+.foot>h6{
+    font-size: 12px;
+}
+.foot>h6:hover{
+    text-decoration: underline;
+
+}
+.card1>h6{
+    line-height: 30px;
+}
+.card1>h4{
+    line-height: 30px;
+}

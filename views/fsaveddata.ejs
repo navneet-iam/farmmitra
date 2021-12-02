@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>farmer's area</title>
+    <link rel="stylesheet" href="css/styles3.css">
+</head>
+
+<body class="transaction">
+
+    <div class="box" id="heading">
+        <h2> Your previously inserted data </h2>
+    </div>
+
+    <div class="box">
+        <table>
+            <tr>
+                <th class="td2">Vendor id</th>
+                <th class="td3">LendAmount</th>
+                <th class="td3">LendInterest</th>
+                <th class="td4">LoanAmount</th>
+                <th class="td4">LoanInterest</th>
+            </tr>
+        </table>
+        <% farmid.forEach(item => {%>
+            <table>
+
+                <tr>
+                    <td class="td2">
+                        <div class="item">
+                            <p>
+                                <%=item.Vendorid%>
+                            </p>
+                        </div>
+                    </td>
+                    <td class="td3">
+                        <div class="item">
+                            <p>
+                                <%=item.lendA%>
+                            </p>
+                        </div>
+                    </td>
+                    <td class="td3">
+                        <div class="item">
+                            <p>
+                                <%=item.lendI%>
+                            </p>
+                        </div>
+                    </td>
+                    <td class="td4">
+                        <div class="item">
+                            <p>
+                                <%=item.loanA%>
+                            </p>
+                        </div>
+                    </td>
+                    <td class="td4">
+                        <div class="item">
+                            <p>
+                                <%=item.loanI%>
+                            </p>
+                        </div>
+                    </td>
+
+            </table>
+            <% })%>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>function doit(){
+        var falana = document.getElementById("fid");
+        falana.value = localStorage.getItem("farmid");
+        document.frm.submit();
+    }</script>
+</head>
+<body onload="doit()">
+    <form action="/fsaveddata" method="post" name="frm">
+        <input type="text" name="fid" id="fid">
+    </form>
+</body>
+</html>

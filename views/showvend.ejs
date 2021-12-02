@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image" href="../pics/logo2.png">
+    <link rel="stylesheet" href="../css/page1.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css">
+    <script src="../javascript/jquery-1.8.2.min.js"></script>
+    <script src="../javascript/bootstrap.min.js"></script>
+    <script src="../javascript/vanilla-tilt.min.js"></script>
+    <script>
+        function doit(ref) {
+            // alert(ref);
+
+            var ss = document.getElementById(ref);
+            ss.style.visibility = "visible";
+        }
+
+        function dooit(ref) {
+            // alert(ref);
+
+            var ss = document.getElementById(ref);
+            ss.style.visibility = "hidden";
+        }
+
+        function sub() {
+
+            var ss = document.getElementById("vv");
+            var sf = document.getElementById("vf");
+            localStorage.setItem("farmid", sf.value);
+            ss.value = ref + " ";
+
+
+        }
+        function doi(ref) {
+            alert(ref);
+        }
+
+
+        function dofp() {
+            window.location = "/farmp";
+        }
+        function dofd() {
+            window.location = "/farmd";
+        }
+        function doft() {
+            window.location = "/fsaved";
+        }
+        function dosubmit() {
+            document.frm.submit();
+        }
+    </script>
+</head>
+
+<body style="background-color: rgb(49, 10, 10);" onload="sub()">
+    <div class="container-fluid" style="background-color: rgb(49, 10, 10);position: relative;">
+
+        <div style=" width: 100%;color: white;" class="row">
+
+            <div class="col-md-4 pad fle-row">
+                <div class="nav-logo"></div>
+
+                <h3>FarmMitra</h3>
+            </div>
+            <div class="col-md-2 pad"></div>
+            <div class="col-md-6 pad" id="nav22">
+                <div class="btn-group" style="width: 100%;;">
+                    <button type="button" class="btn btn-nav " onclick="dofp()">Profile</button>
+                    <button type="button" class="btn btn-nav " onclick="dofd()">DataBase</button>
+                    <button type="button" class="btn btn-nav " onclick="doft()">Transactions</button>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="container-fluid row mt-5">
+        <% for(var i=0;i<p1.length;i++){ %>
+            <form class="fle-row col-md-4 " method="post" action="/liked" style="margin: 0; padding: 0;">
+                <div class="card mt-5" style="width: 90%; margin: 0; padding: 0;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            Wheat: <%= p1[i] %>
+                        </li>
+                        <li class="list-group-item">
+                            Rice: <%= p2[i] %>
+                        </li>
+                        <li class="list-group-item">
+                            Cotton: <%= p3[i] %>
+                        </li>
+                        <li class="list-group-item">
+                            Maize: <%= p4[i] %>
+                        </li>
+                        <li class="list-group-item">
+                            VendorId: <%= p5[i] %>
+                        </li>
+                    </ul>
+                    <input style="visibility: hidden;" type="text" name="vi" class="form-control form-control-lg " id="vv" value="<%=p5[i]%>">
+                    <input type="text" name="fi" class="form-control form-control-lg " id="vf" value="<%=p8%>">
+                    <input type="text" name="cn" class="form-control form-control-lg " placeholder="crop">
+                    <input type="text" name="qn" class="form-control form-control-lg "
+                        placeholder="quantity in quintal">
+
+                    <div id="<%=p1[i]%>" style="width: 18rem;position: absolute;;background-color: violet;visibility:
+                        hidden;">
+                        <ul>
+                            <li>
+                                Name: <%=p7[i]%>
+                            </li>
+                            <li>
+                                Location: <%=p6[i]%>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="submit" class="btn btn-outline-secondary" onmousemove="doit(<%=p1[i]%>)"
+                        onmouseleave="dooit(<%=p1[i]%>)">Send
+                        request</button>
+
+
+                </div>
+            </form>
+
+
+
+            <% }%>
+
+
+
+    </div>
+    <!-- 
+    <form method="post" action="/liked" name="frm" style="width: 100%;" class="row">
+        <input type="text" name="vi" class="form-control form-control-lg col-md-6" id="vv" style="visibility: hidden;">
+        <input type="text" name="fi" class="form-control form-control-lg col-md-6" style="visibility: hidden;" id="vf"
+            value="<%=p8%>">
+        <input type="text" name="cn" class="form-control form-control-lg col-md-4" placeholder="crop">
+        <input type="text" name="qn" class="form-control form-control-lg col-md-4" placeholder="quantity in quintal">
+
+
+    </form> -->
+
+</body>
+
+</html>

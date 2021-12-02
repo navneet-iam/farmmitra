@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        FarmMitra
+    </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image" href="pics/logo2.png">
+    <link rel="stylesheet" href="css/page1.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <script src="javascript/jquery-1.8.2.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/vanilla-tilt.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#bod").scroll(function () {
+                if ($(this).scrollTop() == 0) {
+                    $("#nav22").attr("style", "visibility:visible;");
+                }
+                else {
+                    $("#nav22").attr("style", "visibility:hidden;");
+                }
+
+
+            })
+
+
+
+
+
+        })
+
+        function subchat() {
+            document.frmchat.submit();
+        }
+        function abts() {
+            window.location.href = "/aboutus";
+        }
+        function doi() {
+            window.location.href = "/";
+        }
+        function fb() {
+            window.location.href = "https://www.facebook.com/profile.php?id=100006558068707";
+        }
+        function tw() {
+            window.location.href = "https://twitter.com/Navpatodiya19";
+        }
+        function wa() {
+            window.location.href = "https://chat.whatsapp.com/DtF6RFwd087AelIH8qJbnY";
+        }
+        function te() {
+            window.location.href = "https:";
+        }
+
+        // function doit(ref) {
+        //     alert("sdfg");
+
+        //     ref.style.visibility = 'visible';
+        // }
+
+    </script>
+    <style>
+        .ho:hover {
+            cursor: grabbing;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 100vh;width: 100%;position:fixed;z-index: -20;overflow-y: scroll;" class="bod" id="bod">
+        <div class="container-fluid" style="background-color: rgb(49, 10, 10);position: relative;"
+            onclick="doit(nav22)">
+
+            <div style=" width: 100%;color: white;" class="row">
+
+                <div class="col-md-4 pad fle-row">
+                    <div class="nav-logo"></div>
+
+                    <h3>FarmMitra</h3>
+                </div>
+                <div class="col-md-2 pad"></div>
+                <div class="col-md-6 pad" id="nav22">
+                    <div class="btn-group" style="width: 100%;;">
+                        <button type="button" class="btn btn-nav " onclick="doi()">Home</button>
+                        <button type="button" class="btn btn-nav " onclick="abts()">About US</button>
+                        <button type="button" class="btn btn-nav " ><a href="#endd" style="text-decoration: none;color: white;">Contact Us</a></button>
+                        <button type="button" class="btn btn-nav " ><a href="#endd" style="text-decoration: none;color: white;">Help</a></button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="container-fluid row fle-row mt-3">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <div class="card card-upper fle-row" style="width: 18rem;" data-tilt data-tilt-perspective="200">
+                    <img src="pics/zachary-ferguson-2_J4PZPB52I-unsplash.jpg" class="card-img-top">
+
+
+                    <form class="card-body" style="position: absolute;" method="get" action="/flogin">
+
+                        <button type="submit" class="btn btn-outline-secondary btn-card"
+                            style="transform:translateZ(50px);">Farmer</button>
+
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div class="card card-upper fle-row" style="width: 18rem;" data-tilt data-tilt-perspective="200">
+                    <img src="pics/jordan-christian-TS2_ti0J1w8-unsplash.jpg" class="card-img-top">
+
+                    <form class="card-body" style="position: absolute;" method="get" action="/vlogin">
+
+                        <button type="submit" class="btn btn-outline-secondary btn-card"
+                            style="transform:translateZ(50px);">Vendor</button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+
+        </div>
+        <div class="container mt-5">
+            <div class="row nospace"
+                style="background-color:rgba(255, 255, 255, .5);border: 2px black solid;border-radius: 10px;">
+                <div class="col-md-8 card1">
+                    <h4 class="mt-4">FarmMitra:Online Mart for Farmers</h4>
+                    <h6 style="line-height: 30px;">Farmers can Sell their produce in any market in Indian</h6>
+                    <h6 style="line-height: 30px;">This Site Help farmers to get desired prices on nearby locations</h6>
+
+                    <h6 style="line-height: 30px;">Now Farmers dont have to wait for a long time with thier produce in
+                        market</h6>
+                    <h6>The Site sends autogenerated msg from vendor side on turn of a farmer to sell its produce</h6>
+                </div>
+                <div class="col-md-4">
+                    <img src="pics/evgeny-nelmin-_Cmp6Kf5l7o-unsplash.jpg" width="100%">
+                </div>
+            </div>
+            <div class="row nospace"
+                style="background-color:rgba(255, 255, 255, .5);border: 2px black solid;border-radius: 10px;">
+                <div class="col-md-4">
+                    <img src="pics/close-up-farmer-hand-using-mobile-phone-tablet-standing-rice-field-sickle-scythe-hook-harvesting-130645147.jpg"
+                        width="100%">
+                </div>
+                <div class="col-md-8 card1">
+                    <h4 class="mt-4">DataBase management</h4>
+                    <h6>Easy Database management for farmers to store info of the harvest sold and prices and
+                        transactions
+                    </h6>
+                    <h6>Easy Database management for vendors to store info of the farmer customers and transactions</h6>
+                    <h6>Email reminder using database for farmers and Vendors</h6>
+                </div>
+
+            </div>
+
+            <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active ">
+                        <center>
+                            <img src="pics/carousel0.jpg" class="d-block w-75" alt="...">
+                        </center>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>If You Get Food Daily</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <center>
+                            <img src="pics/carousel1.jpg" class="d-block w-75" alt="...">
+                        </center>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Then Thank A Farmer</h5>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <center>
+                            <img src="pics/carousel2.jpg" class="d-block w-75" alt="...">
+                        </center>
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Because Farming Aint't Easy</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <form method="post" action="/save-feedback">
+                <div class="row nospace mt-5" style="background-color:rgba(255, 255, 255, .5);">
+                    <div class="col-md-6">
+                        <div class="mb-3 mt-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="Text" class="form-control" id="exampleFormControlInput1" name="nam"
+                                placeholder="Enter your Name">
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" name="ema"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Write Message</label>
+                            <textarea class="form-control" name="fee" id="exampleFormControlTextarea1"
+                                rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-secondary mt-3 mb-5">Send</button>
+                    </div>
+                    <div class="col-md-6 fle-col">
+                        <h1>Give Your</h1>
+                        <h1>Valuable</h1>
+                        <h1>Feedback</h1>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="row container-fluid nospace mt-5" style="background-color:rgba(49, 10, 10,.9) ;">
+            <div class="col-md-1 mt-4 mb-4"></div>
+            <div class="col-md-4 mt-4 mb-4">
+                <div style="width: 100%; ;color: skyblue;" class="fle-row ho">
+                    <i class="fab fa-twitter " onclick="tw()"></i>
+                    <i class="fab fa-facebook-f" onclick="fb()"></i>
+                    <i class="fab fa-whatsapp" onclick="wa()"></i>
+                    <i class="fab fa-telegram-plane" onclick="te()"></i>
+
+                </div>
+                <p>This WebSite has Copyrights</p>
+            </div>
+            <div class="col-md-1 mt-4 mb-4"></div>
+            <div class="col-md-6 row nospace mt-4 mb-4" style="color: seashell;">
+                <div class="col-md-3 foot nospace">
+                    <h3>About Us</hh3>
+                        <h6 onclick="abts()">About Us</h6>
+                        <h6>Privacy</h6>
+                        <h6>Terms & Conditions</h6>
+                </div>
+                <div class="col-md-3 foot nospace">
+                    <h3>Contact Us</hh3>
+                        <h6>@7087197427</h6>
+                        <h6>@8824435123</h6>
+                        <h6>20105@iiitu.ac.in</h6>
+                        <h6>20140@iiitu.ac.in</h6>
+
+                </div>
+                <div class="col-md-3 foot nospace">
+                    <h3>Help</hh3>
+                        <form action="/chat" method="get" name="frmchat">
+                            <h6 onclick="subchat()">Chat</h6>
+                        </form>
+                        <h6>Info</h6>
+
+                </div>
+                <div class="col-md-3 foot nospace">
+                    <h3>Links</hh3>
+                        <h6 name="endd" id="endd">Home</h6>
+                        <h6>Exit...</h6>
+                        <h6>Content</h6>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="javascript/vanilla-tilt.js"></script>
+
+</body>
+
+</html>
