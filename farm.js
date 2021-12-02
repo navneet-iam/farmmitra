@@ -812,7 +812,7 @@ app.post("/req-reply", function (req, resp) {
 });
 
 
-app.listen(3003, function () {
+app.listen(process.env.PORT, function () {
     console.log("server started");
 });
 
