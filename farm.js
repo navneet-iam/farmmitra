@@ -387,12 +387,23 @@ app.post("/vf", function (req, resp) {
 
 
                     })
-
+                    resp.redirect("/then");
 
 
                 }
                 else {
+                    FarmerData.deleteMany({ Farmerid: req.body.fid }, { Vendorid: req.body.vid }, function (err) {
+                        if (err) {
+                            console.log(err);
+                        }
+                        else {
+                            console.log("deleted successfullyy");
+                        }
+
+
+                    })
                     console.log(req.body.code + "  ");
+                    resp.send("wrong info.");
                 }
 
 
@@ -812,7 +823,7 @@ app.post("/req-reply", function (req, resp) {
 });
 
 
-app.listen(process.env.PORT, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log("server started");
 });
 
