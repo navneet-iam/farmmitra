@@ -8,6 +8,7 @@ var path = require("path");
 var nodemailer = require('nodemailer')
 const mongoose = require('mongoose');
 const app = express();
+require('dotenv').config();
 
 mongoose.connect('mongodb+srv://admin-farmmitra:farmmitra.user@cluster1.tctdt.mongodb.net/farmappss?retryWrites=true&w=majority', { useNewUrlParser: true });
 
@@ -25,7 +26,7 @@ var transport = nodemailer.createTransport(
         service: 'gmail',
         auth: {
             user: 'farmmitra2021@gmail.com',
-            pass: 'farm_mitra@2021'
+            pass: process.env.pswdd
         }
     }
 )
