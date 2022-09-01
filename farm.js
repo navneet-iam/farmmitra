@@ -586,16 +586,21 @@ app.post("/f-old-login", function (req, resp) {
             console.log(err);
         }
         else {
+            if(foundUser){
+                if (foundUser.Pass == password) {
 
-            if (foundUser.Pass == password) {
-
-                t8 = foundUser.Email;
-                console.log("re");
-                //  localStorage.setItem("farmid", foundUser._id);
-                resp.redirect("/then");
+                    t8 = foundUser.Email;
+                    console.log("re");
+                    //  localStorage.setItem("farmid", foundUser._id);
+                    resp.redirect("/then");
+                }
+                else {
+                    console.log("wrong pass");
+                    resp.redirect("/f-old-login");
+                }
             }
-            else {
-                console.log("wrong pass");
+            else{
+                resp.redirect("/f-old-login");
             }
         }
     });
